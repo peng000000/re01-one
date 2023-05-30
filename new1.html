@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex布局</title>
+    <style>
+        body{
+            /* display: flex; */
+            margin: 0;
+            height: 100vh;
+            /* background-color: aquamarine; */
+        }
+
+        *{
+            /* border: 1px solid black; */
+        }
+
+        .flex{
+            display: flex;
+        }
+
+        .cebian{
+            width: 200px;
+            background-color: rgb(148, 85, 177);
+            z-index: 1;
+        }
+
+        .zhuquyu{
+            flex: 1;
+            flex-direction: column;
+        }
+
+        .toubu{
+            height: 100px;
+            background-color: rgb(99, 142, 180);
+            z-index: 1;
+        }
+
+        .neirong{
+            flex: 1;
+            overflow: auto;
+        }
+
+        .zuoqu{
+            flex: 3;
+            background-color: rgb(255, 255, 255);
+        }
+
+        .youqu{
+            flex: 1;
+            background-color: rgb(255, 255, 255);
+        }
+
+        .tishiqu{
+            height: 150px;
+            background-color: rgb(223, 140, 32);
+        }
+
+        .xiaoxiqu{
+            height: 200px;
+            background-color: aqua;
+        }
+
+        .shukuang{
+            height: 50px;
+            background-color: rgb(26, 142, 153);
+            flex: 1;
+
+        }
+
+        .liebiaokuang{
+            height: 200px;
+            background-color: rgb(93, 180, 151);
+        }
+
+        .mg8{
+            margin: 8px;
+        }
+
+        .mgr8{
+            margin-right: 8px;
+        }
+
+        .mgt8{
+            margin-top: 8px;
+        }
+    </style>
+</head>
+<body class="flex">
+    <!-- 侧边 -->
+    <div class="cebian">
+
+    </div>
+
+    <!-- 主区域 -->
+    <div class="zhuquyu flex">
+        <!-- 头部栏 -->
+        <div class="toubu">
+
+        </div>
+
+        <!-- 内容区 -->
+        <div class="neirong flex">
+            <!-- 左区 -->
+            <div class="zuoqu mg8">
+                <!-- 数据区 -->
+                <div class="shujuqu flex">
+                    <div class="shukuang mgr8"></div>
+                    <div class="shukuang mgr8"></div>
+                    <div class="shukuang mgr8"></div>
+                    <div class="shukuang"></div>
+                </div>
+
+                <!-- 列表区 -->
+                <div class="liebiao"></div>
+                <div class="flex column liebiaokuang mgt8"></div>
+                <div class="flex column liebiaokuang mgt8"></div>
+                <div class="flex column liebiaokuang mgt8"></div>
+                <div class="flex column liebiaokuang mgt8"></div>
+                <div class="flex column liebiaokuang mgt8"></div>
+                <div class="flex column liebiaokuang mgt8"></div>
+                <div class="flex column liebiaokuang mgt8"></div>
+                <div class="flex column liebiaokuang mgt8"></div>
+            </div>
+
+            <!-- 右区 -->
+            <div class="youqu mgt8">
+                <!-- 提示区 -->
+                <div class="tishiqu flex column"></div>
+
+                <!-- 消息区 -->
+                <div class="xiaoxiqu flex column mgt8"></div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
